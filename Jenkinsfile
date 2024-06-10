@@ -9,7 +9,7 @@ pipeline {
       // apart from the secrets that we define as global parameters for Jenkins
       // the other variables can be set as ‘string’ parameters in the job or directly in this file
 	//ID_DOCKER = "dockerhub_account_name"  //replace with your dockerhub account name
-		
+	ID_DOCKER = "francksaounde"	
        //DOCKER_IMG = $IMAGE_NAME //"static_web_img"
 	DOCKER_IMG = "static_web_img"
 	   
