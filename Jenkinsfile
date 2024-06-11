@@ -4,11 +4,11 @@ pipeline {
        //Secrets to set up in Jenkins  
      DOCKERHUB_PASSWORD  = credentials('dockerhub') // We define a username/password ‘credentials’ parameter for connecting to the docker hub.
 	     //'dockerhub' is the id used in this definition
-      //HEROKU_API_KEY = credentials('heroku_api_key')   // to connect to heroku, we use a ‘credentials’ parameter of the text secret type
+      HEROKU_API_KEY = credentials('heroku_api_key')   // to connect to heroku, we use a ‘credentials’ parameter of the text secret type
 	     
       // apart from the secrets that we define as global parameters for Jenkins
       // the other variables can be set as ‘string’ parameters in the job or directly in this file
-	//ID_DOCKER = "dockerhub_account_name"  //replace with your dockerhub account name
+	ID_DOCKER = "dockerhub_account_name"  //replace with your dockerhub account name
 		
        //DOCKER_IMG = $IMAGE_NAME //"static_web_img"
 	DOCKER_IMG = "static_web_img"
