@@ -28,8 +28,9 @@ pipeline {
 	// localhost or ip address of the machine running the Jenkins stack
 	//HOST_ADDRESS = $IP_HOST 
 	HOST_ADDRESS = "http://192.168.56.10" 
-	   
-	SENTENCE_TO_TEST = "A fully responsive site template" //phrase à tester sur la page d'accueil
+
+	// sentence to test on home page
+	SENTENCE_TO_TEST = "A fully responsive site template" 
 	   
 	// definition of deployment environments	   
        STAGING = "${ID_DOCKER}-staging"
